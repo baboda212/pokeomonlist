@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>포켓몬 도감</h1>
+    <div id="poke-list"></div>
+    <!-- <script>
+        fetch('http://localhost:3001/pokemons/all')
+        .then(res => res.json())
+        .then(data => {
+            for (let i = 0; i < data.length; i++){
+            const listEl = document.querySelector('#poke-list'); 
+            const itemEl = document.createElement("div");
+            itemEl.classList.add("item");
+            itemEl.innerHTML = 
+            `<img src="${data[i].imgUrl}" alt="${data[i].name}"/>` + `${data[i].name}`
+            listEl.appendChild(itemEl);
+        }
+        })
+    </script> -->
+    
+        <% for(let i = 0; i < pokemons.length; i++){ %>
+            <p><img src= "<%= pokemons[i].imgUrl %>"/></p> 
+        <% }; %>
+        
+        <img src= "<%= pokemons[0].imgUrl %>"/>
+        <img src= "<%= pokemons[1].imgUrl %>"/>
+        <img src= "<%= pokemons[2].imgUrl %>"/>
+        <img src= "<%= pokemons[3].imgUrl %>"/>
+</body>
+</html>
