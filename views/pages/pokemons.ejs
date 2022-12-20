@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <nav>
+        <a href="/">home</a> |
+        <a href="/about">about</a> |
+        <a href="/pokemons">pokemons</a>
+    </nav>
     <h1>포켓몬 도감</h1>
     <div id="poke-list"></div>
     <!-- <script>
@@ -25,7 +31,11 @@
     </script> -->
     
         <% for(let i = 0; i < pokemons.length; i++){ %>
-            <p><img src= "<%= pokemons[i].imgUrl %>"/></p> 
+            <div class="box">
+                <img src= "<%= pokemons[i].imgUrl %>"/>
+                <p><%= pokemons[i].name %> </p>
+                <p> 속성: <%= pokemons[i].type %> </p>
+            </div> 
         <% }; %>
         
         <img src= "<%= pokemons[0].imgUrl %>"/>

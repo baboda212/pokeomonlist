@@ -2,3 +2,11 @@
 a{
     color: red;
 }
+.box{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px auto;
+}
