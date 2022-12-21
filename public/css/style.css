@@ -2,6 +2,16 @@
 a{
     color: red;
 }
+body{
+    background-color: rgba(187, 224, 236, 0.5);
+}
+nav{
+    text-align: center;
+}
+#poke-list{
+    display: flex;
+    flex-wrap: wrap;
+}
 .box{
     width: 500px;
     height: 500px;
@@ -9,4 +19,8 @@ a{
     border-radius: 15px;
     text-align: center;
     margin: 10px auto;
+    background-color: rgba(223, 221, 221, 0.5);
+}
+h1{
+    text-align: center;
 }

@@ -14,7 +14,15 @@
         <a href="/pokemons">pokemons</a>
     </nav>
     <h1>포켓몬 도감</h1>
-    <div id="poke-list"></div>
+    <div id="poke-list">
+        <% for(let i = 0; i < pokemons.length; i++){ %>
+            <div class="box">
+                <img src= "<%= pokemons[i].imgUrl %>"/>
+                <p><%= pokemons[i].name %> </p>
+                <p> 속성: <%= pokemons[i].type %> </p>
+            </div> 
+        <% }; %>
+    </div>
     <!-- <script>
         fetch('http://localhost:3001/pokemons/all')
         .then(res => res.json())
@@ -30,17 +38,9 @@
         })
     </script> -->
     
-        <% for(let i = 0; i < pokemons.length; i++){ %>
-            <div class="box">
-                <img src= "<%= pokemons[i].imgUrl %>"/>
-                <p><%= pokemons[i].name %> </p>
-                <p> 속성: <%= pokemons[i].type %> </p>
-            </div> 
-        <% }; %>
+       
         
         <img src= "<%= pokemons[0].imgUrl %>"/>
-        <img src= "<%= pokemons[1].imgUrl %>"/>
-        <img src= "<%= pokemons[2].imgUrl %>"/>
-        <img src= "<%= pokemons[3].imgUrl %>"/>
+        
 </body>
 </html>
