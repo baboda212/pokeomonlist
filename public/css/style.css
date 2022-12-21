@@ -1,12 +1,23 @@
 /* style.css */
 a{
-    color: red;
+    color: #000;
+    text-decoration: none;
 }
 body{
     background-color: rgba(187, 224, 236, 0.5);
 }
 nav{
     text-align: center;
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a{
+    margin-left: 40px;
+    color: #fff;
+    font-size: 2rem;
 }
 #poke-list{
     display: flex;
@@ -14,13 +25,21 @@ nav{
 }
 .box{
     width: 500px;
-    height: 500px;
+    height: 450px;
     border: 1px solid #ddd;
     border-radius: 15px;
     text-align: center;
     margin: 10px auto;
     background-color: rgba(223, 221, 221, 0.5);
 }
+.box img{
+    width: 60%;
+}
 h1{
     text-align: center;
+}
+p:last-child{
+    font-size: 14px;
+    margin: 5px;
+    text-align: left;
 }

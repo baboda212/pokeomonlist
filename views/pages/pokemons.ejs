@@ -9,9 +9,9 @@
 </head>
 <body>
     <nav>
-        <a href="/">home</a> |
-        <a href="/about">about</a> |
-        <a href="/pokemons">pokemons</a>
+        <a href="/">HOME</a> 
+        <a href="/about">ABOUT</a> 
+        <a href="/pokemons">POKEMONS</a>
     </nav>
     <h1>포켓몬 도감</h1>
     <div id="poke-list">
@@ -20,6 +20,7 @@
                 <img src= "<%= pokemons[i].imgUrl %>"/>
                 <p><%= pokemons[i].name %> </p>
                 <p> 속성: <%= pokemons[i].type %> </p>
+                <p><%= pokemons[i].desc %> </p>
             </div> 
         <% }; %>
     </div>
@@ -37,10 +38,6 @@
         }
         })
     </script> -->
-    
-       
-        
-        <img src= "<%= pokemons[0].imgUrl %>"/>
         
 </body>
 </html>
